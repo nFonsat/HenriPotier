@@ -9,11 +9,21 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    private var henryPotierWS: HenryPotierWebService {
+        return HenryPotierWebService.shared
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func testFetching(_ sender: UIButton) {
+        self.henryPotierWS.fetchBooks { (books) in
+            print(books)
+        }
     }
 
 
