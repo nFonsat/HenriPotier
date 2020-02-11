@@ -21,8 +21,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func testFetching(_ sender: UIButton) {
-        self.henryPotierWS.fetchBooks { (books) in
-            print(books)
+        self.henryPotierWS.getOffersForBooks([]) { (offer) in
+            print(offer)
         }
     }
 

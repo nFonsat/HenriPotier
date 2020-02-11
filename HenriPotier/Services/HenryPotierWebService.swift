@@ -35,4 +35,26 @@ class HenryPotierWebService: NSObject {
         }
     }
     
+    func getOffersForBooks(_ books: [BookModel], completion: @escaping (OfferModel?) -> Void) {
+        
+        let query: String = "c8fabf68-8374-48fe-a7ea-a00ccd07afff,a460afed-e5e7-4e39-a39d-c885c05db861"
+        
+        let url: String = "\(HenryPotierWebService.api)/\(query)/commercialOffers"
+        Alamofire.request(url)
+            .responseData { (resp) in
+                
+                guard let data = resp.data else { return }
+                
+                let decoder = JSONDecoder()
+                
+                do {
+                    let model: OfferModel = try decoder.decode(OfferModel.self, from: data)
+                    completion(model)
+                } catch {
+                    print("Response - Error : \(error.localizedDescription)")
+                    completion(nil)
+                }
+        }
+    }
+    
 }
