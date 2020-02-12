@@ -65,5 +65,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let book: BookModel = self.books[indexPath.row]
+        let bookDetailView: BookDetailViewController = BookDetailViewController()
+        bookDetailView.book = book
+        self.navigationController?.pushViewController(bookDetailView, animated: true)
+        
+    }
+    
     
 }
