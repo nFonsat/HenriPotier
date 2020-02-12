@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Henri Potier"
         self.initTableView()
         // Do any additional setup after loading the view.
     }
@@ -39,7 +40,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func initTableView() {
         self.bookTableView.dataSource = self
         self.bookTableView.delegate = self
-        self.bookTableView.register(UITableViewCell.self, forCellReuseIdentifier: "BookCellIdentifier")
+        let cellNib = UINib(nibName: "BookTableViewCell", bundle: nil)
+        self.bookTableView.register(cellNib, forCellReuseIdentifier: "BookCellIdentifier")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,13 +49,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.bookTableView.dequeueReusableCell(
-            withIdentifier: "BookCellIdentifier", for: indexPath)
+        var cell = self.bookTableView.dequeueReusableCell(withIdentifier: "BookCellIdentifier") as? BookTableViewCell
+        
+        if cell == nil {
+            cell = BookTableViewCell()
+        }
         
         let book: BookModel = self.books[indexPath.row]
-        cell.textLabel?.text = book.title
+        cell!.book = book
         
-        return cell
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
     
