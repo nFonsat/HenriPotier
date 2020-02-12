@@ -18,6 +18,8 @@ class BookDetailViewController: UIViewController {
     
     @IBOutlet var bookSynopsisTextView: UITextView!
     
+    @IBOutlet var basketButton: UIButton!
+    
     var book: BookModel!
 
     override func viewDidLoad() {
@@ -28,6 +30,8 @@ class BookDetailViewController: UIViewController {
         
         let sinopsis = self.book.synopsis.joined(separator: "\n")
         self.bookSynopsisTextView.text = sinopsis
+        
+        self.basketButton.layer.cornerRadius = self.basketButton.frame.height * 0.5
 
         // Do any additional setup after loading the view.
     }
