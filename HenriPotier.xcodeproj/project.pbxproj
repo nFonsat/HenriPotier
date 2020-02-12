@@ -3,21 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C925E88523F3643C00DF7E17 /* HenryPotierWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925E88423F3643C00DF7E17 /* HenryPotierWebService.swift */; };
+		C925E88823F3653400DF7E17 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925E88723F3653400DF7E17 /* BookModel.swift */; };
 		C971CE4623F35A79009A3F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CE4523F35A79009A3F84 /* AppDelegate.swift */; };
 		C971CE4F23F35A7A009A3F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C971CE4E23F35A7A009A3F84 /* Assets.xcassets */; };
 		C971CE5223F35A7A009A3F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971CE5023F35A7A009A3F84 /* LaunchScreen.storyboard */; };
 		C971CE5C23F35C10009A3F84 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CE5A23F35C10009A3F84 /* HomeViewController.swift */; };
 		C971CE5D23F35C10009A3F84 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C971CE5B23F35C10009A3F84 /* HomeViewController.xib */; };
+		C9AF559F23F36F25008A5F21 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF559E23F36F25008A5F21 /* OfferModel.swift */; };
 		D5DEBCD1D497832B4BC25B41 /* Pods_HenriPotier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B59AE3461B358237750FC /* Pods_HenriPotier.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72C04992CE4224D33F6BADFE /* Pods-HenriPotier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotier.release.xcconfig"; path = "Target Support Files/Pods-HenriPotier/Pods-HenriPotier.release.xcconfig"; sourceTree = "<group>"; };
 		A60B59AE3461B358237750FC /* Pods_HenriPotier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriPotier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C925E88423F3643C00DF7E17 /* HenryPotierWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenryPotierWebService.swift; sourceTree = "<group>"; };
+		C925E88723F3653400DF7E17 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		C971CE4223F35A79009A3F84 /* HenriPotier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C971CE4523F35A79009A3F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C971CE4E23F35A7A009A3F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -25,6 +30,7 @@
 		C971CE5323F35A7A009A3F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C971CE5A23F35C10009A3F84 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C971CE5B23F35C10009A3F84 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C9AF559E23F36F25008A5F21 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
 		CBAB9B9B50D8FC6CAFF7504B /* Pods-HenriPotier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotier.debug.xcconfig"; path = "Target Support Files/Pods-HenriPotier/Pods-HenriPotier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +52,6 @@
 				CBAB9B9B50D8FC6CAFF7504B /* Pods-HenriPotier.debug.xcconfig */,
 				72C04992CE4224D33F6BADFE /* Pods-HenriPotier.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,23 @@
 				A60B59AE3461B358237750FC /* Pods_HenriPotier.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C925E88323F3641200DF7E17 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C925E88423F3643C00DF7E17 /* HenryPotierWebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C925E88623F3651500DF7E17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C925E88723F3653400DF7E17 /* BookModel.swift */,
+				C9AF559E23F36F25008A5F21 /* OfferModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C971CE3923F35A78009A3F84 = {
@@ -79,6 +101,8 @@
 		C971CE4423F35A79009A3F84 /* HenriPotier */ = {
 			isa = PBXGroup;
 			children = (
+				C925E88623F3651500DF7E17 /* Models */,
+				C925E88323F3641200DF7E17 /* Services */,
 				C971CE5923F35BF0009A3F84 /* Views */,
 				C971CE4523F35A79009A3F84 /* AppDelegate.swift */,
 				C971CE4E23F35A7A009A3F84 /* Assets.xcassets */,
@@ -213,6 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C971CE4623F35A79009A3F84 /* AppDelegate.swift in Sources */,
+				C925E88523F3643C00DF7E17 /* HenryPotierWebService.swift in Sources */,
+				C9AF559F23F36F25008A5F21 /* OfferModel.swift in Sources */,
+				C925E88823F3653400DF7E17 /* BookModel.swift in Sources */,
 				C971CE5C23F35C10009A3F84 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
