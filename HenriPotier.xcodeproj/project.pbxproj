@@ -106,8 +106,8 @@
 				C971CE5923F35BF0009A3F84 /* Views */,
 				C971CE4523F35A79009A3F84 /* AppDelegate.swift */,
 				C971CE4E23F35A7A009A3F84 /* Assets.xcassets */,
-				C971CE5023F35A7A009A3F84 /* LaunchScreen.storyboard */,
 				C971CE5323F35A7A009A3F84 /* Info.plist */,
+				C971CE5023F35A7A009A3F84 /* LaunchScreen.storyboard */,
 			);
 			path = HenriPotier;
 			sourceTree = "<group>";
