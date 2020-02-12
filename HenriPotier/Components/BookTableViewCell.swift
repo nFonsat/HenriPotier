@@ -14,10 +14,13 @@ class BookTableViewCell: UITableViewCell {
     
     @IBOutlet var imageBook: UIImageView!
     
+    @IBOutlet var titlePrice: UILabel!
+    
     public var book: BookModel!
     {
         didSet {
             self.titleBook.text = self.book.title
+            self.titlePrice.text = "\(self.book.price)€"
             self.imageBook.load(urlString: self.book.cover)
         }
     }
