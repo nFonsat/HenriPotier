@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     private var henryPotierWS: HenryPotierWebService {
         return HenryPotierWebService.shared
     }
+    
+    private var books: [BookModel] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,21 +22,11 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func testFetching(_ sender: UIButton) {
-        self.henryPotierWS.getOffersForBooks([]) { (offer) in
-            print(offer)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.henryPotierWS.fetchBooks { books in
+            self.books = books
         }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
