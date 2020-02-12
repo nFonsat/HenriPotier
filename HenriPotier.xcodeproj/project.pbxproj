@@ -17,6 +17,8 @@
 		C9AF559F23F36F25008A5F21 /* OfferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF559E23F36F25008A5F21 /* OfferModel.swift */; };
 		C9AF55B623F4BEDE008A5F21 /* BookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AF55B423F4BEDE008A5F21 /* BookTableViewCell.xib */; };
 		C9AF55B723F4BEDE008A5F21 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF55B523F4BEDE008A5F21 /* BookTableViewCell.swift */; };
+		C9AF55BA23F4C064008A5F21 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF55B823F4C064008A5F21 /* BookDetailViewController.swift */; };
+		C9AF55BB23F4C064008A5F21 /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9AF55B923F4C064008A5F21 /* BookDetailViewController.xib */; };
 		D5DEBCD1D497832B4BC25B41 /* Pods_HenriPotier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60B59AE3461B358237750FC /* Pods_HenriPotier.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		C9AF559E23F36F25008A5F21 /* OfferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferModel.swift; sourceTree = "<group>"; };
 		C9AF55B423F4BEDE008A5F21 /* BookTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookTableViewCell.xib; path = HenriPotier/Components/BookTableViewCell.xib; sourceTree = "<group>"; };
 		C9AF55B523F4BEDE008A5F21 /* BookTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookTableViewCell.swift; path = HenriPotier/Components/BookTableViewCell.swift; sourceTree = "<group>"; };
+		C9AF55B823F4C064008A5F21 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		C9AF55B923F4C064008A5F21 /* BookDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
 		CBAB9B9B50D8FC6CAFF7504B /* Pods-HenriPotier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotier.debug.xcconfig"; path = "Target Support Files/Pods-HenriPotier/Pods-HenriPotier.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +124,8 @@
 		C971CE5923F35BF0009A3F84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9AF55B823F4C064008A5F21 /* BookDetailViewController.swift */,
+				C9AF55B923F4C064008A5F21 /* BookDetailViewController.xib */,
 				C971CE5A23F35C10009A3F84 /* HomeViewController.swift */,
 				C971CE5B23F35C10009A3F84 /* HomeViewController.xib */,
 			);
@@ -196,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9AF55BB23F4C064008A5F21 /* BookDetailViewController.xib in Resources */,
 				C9AF55B623F4BEDE008A5F21 /* BookTableViewCell.xib in Resources */,
 				C971CE5223F35A7A009A3F84 /* LaunchScreen.storyboard in Resources */,
 				C971CE4F23F35A7A009A3F84 /* Assets.xcassets in Resources */,
@@ -256,6 +263,7 @@
 				C925E88523F3643C00DF7E17 /* HenryPotierWebService.swift in Sources */,
 				C9AF559F23F36F25008A5F21 /* OfferModel.swift in Sources */,
 				C925E88823F3653400DF7E17 /* BookModel.swift in Sources */,
+				C9AF55BA23F4C064008A5F21 /* BookDetailViewController.swift in Sources */,
 				C9AF55B723F4BEDE008A5F21 /* BookTableViewCell.swift in Sources */,
 				C971CE5C23F35C10009A3F84 /* HomeViewController.swift in Sources */,
 			);
