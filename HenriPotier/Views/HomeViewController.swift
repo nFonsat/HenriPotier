@@ -12,8 +12,14 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var bookTableView: UITableView!
     
+    @IBOutlet var cartButton: UIButton!
+    
     private var henryPotierWS: HenryPotierWebService {
         return HenryPotierWebService.shared
+    }
+    
+    private var cartService: BookCartService {
+        return BookCartService.shared
     }
     
     private var books: [BookModel] = []
@@ -23,15 +29,22 @@ class HomeViewController: UIViewController {
         
         self.title = "Henri Potier"
         self.initTableView()
+        
+        self.updateCartButton()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        self.updateCartButton()
         super.viewDidAppear(animated)
         self.henryPotierWS.fetchBooks { books in
             self.books = books
             self.bookTableView.reloadData()
         }
+    }
+    
+    func updateCartButton() {
+        self.cartButton.setTitle("Cart: \(self.cartService.bestPrice)€", for: .normal)
     }
 }
 
