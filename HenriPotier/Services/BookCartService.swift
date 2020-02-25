@@ -12,7 +12,7 @@ class BookCartService: NSObject {
     
     public static let shared: BookCartService = BookCartService()
     
-    private var books: [BookModel] = []
+    private(set) var books: [BookModel] = []
     
     private var webService: HenryPotierWebService {
         return HenryPotierWebService.shared
