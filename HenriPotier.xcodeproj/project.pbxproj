@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C925E88523F3643C00DF7E17 /* HenryPotierWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925E88423F3643C00DF7E17 /* HenryPotierWebService.swift */; };
 		C925E88823F3653400DF7E17 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C925E88723F3653400DF7E17 /* BookModel.swift */; };
+		C93C650B2405DF36006C5DD9 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C65092405DF36006C5DD9 /* CartViewController.swift */; };
+		C93C650C2405DF36006C5DD9 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93C650A2405DF36006C5DD9 /* CartViewController.xib */; };
 		C971CE4623F35A79009A3F84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CE4523F35A79009A3F84 /* AppDelegate.swift */; };
 		C971CE4F23F35A7A009A3F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C971CE4E23F35A7A009A3F84 /* Assets.xcassets */; };
 		C971CE5223F35A7A009A3F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C971CE5023F35A7A009A3F84 /* LaunchScreen.storyboard */; };
@@ -28,6 +30,8 @@
 		A60B59AE3461B358237750FC /* Pods_HenriPotier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriPotier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C925E88423F3643C00DF7E17 /* HenryPotierWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenryPotierWebService.swift; sourceTree = "<group>"; };
 		C925E88723F3653400DF7E17 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		C93C65092405DF36006C5DD9 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		C93C650A2405DF36006C5DD9 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
 		C971CE4223F35A79009A3F84 /* HenriPotier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C971CE4523F35A79009A3F84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C971CE4E23F35A7A009A3F84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 			children = (
 				C9AF55B823F4C064008A5F21 /* BookDetailViewController.swift */,
 				C9AF55B923F4C064008A5F21 /* BookDetailViewController.xib */,
+				C93C65092405DF36006C5DD9 /* CartViewController.swift */,
+				C93C650A2405DF36006C5DD9 /* CartViewController.xib */,
 				C971CE5A23F35C10009A3F84 /* HomeViewController.swift */,
 				C971CE5B23F35C10009A3F84 /* HomeViewController.xib */,
 			);
@@ -209,6 +215,7 @@
 				C9AF55B623F4BEDE008A5F21 /* BookTableViewCell.xib in Resources */,
 				C971CE5223F35A7A009A3F84 /* LaunchScreen.storyboard in Resources */,
 				C971CE4F23F35A7A009A3F84 /* Assets.xcassets in Resources */,
+				C93C650C2405DF36006C5DD9 /* CartViewController.xib in Resources */,
 				C971CE5D23F35C10009A3F84 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				C925E88823F3653400DF7E17 /* BookModel.swift in Sources */,
 				C9AF55BA23F4C064008A5F21 /* BookDetailViewController.swift in Sources */,
 				C9AF55B723F4BEDE008A5F21 /* BookTableViewCell.swift in Sources */,
+				C93C650B2405DF36006C5DD9 /* CartViewController.swift in Sources */,
 				C971CE5C23F35C10009A3F84 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

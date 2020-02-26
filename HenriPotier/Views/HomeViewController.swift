@@ -45,6 +45,12 @@ class HomeViewController: UIViewController {
     
     func updateCartButton() {
         self.cartButton.setTitle("Cart: \(self.cartService.bestPrice)€", for: .normal)
+        self.cartButton.isEnabled = self.cartService.books.count > 0
+    }
+    
+    @IBAction func goToCartView(_ sender: UIButton) {
+        let cartView: CartViewController = CartViewController()
+        self.navigationController?.pushViewController(cartView, animated: true)
     }
 }
 
